@@ -19,10 +19,14 @@ html,body{
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --midnight: #104f55;
+    --blue: #00b4d8;
+    --pink: #ff0054;
+    --black: #0b090a;
+    --lavendar: #6b4e71;
 
 
     /* gradient color */
-    --sky: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    --sky: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
 
 
     /* theme font-family */
@@ -62,26 +66,39 @@ ul{
     list-style-type: none;
 }
 
-/*-- Glo
+h1{
+    font-family: var(--Cinzel);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
 
 
+h3{
+    font-family: var(--Livvic);
+    font-size: 1.3rem;
+}
 
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
 
+/*-------)(--------- Global Classes ---------)(---------*/
 
-
-
-
-
-
-.........bal Classes ---*/
-
-/*--- navbar ---*/
+/*-------------------------- navbar ---------------------*/
 
 .nav{
-    background-color: white;
+    background-color: chartreuse;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 10vh;
+    min-height: 11vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -125,7 +142,7 @@ ul{
 }
 
 .nav .nav-items .nav-link:hover{
-    background-color: var(--text-violet);
+    background-color: var(--pink);
 }
 
 .nav .nav-items .nav-link:hover a{
@@ -149,11 +166,54 @@ ul{
 }
 
 .nav .social i:hover{
-    color: springgreen;
+    color: darkorange;
 }
 
 
-/*--- navbar ---*/
+/*------------)(--------- navbar -------------)(----------*/
+
+
+
+
+/*----------------------- Main Content ------------------*/
+
+/*-------------------- Site Title -----------------*/
+
+main .site-title{
+    background: url('../assets/bgimg.jpg');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 8rem;
+    text-align: center;
+    color: var(--black);
+
+}
+
+main .site-title h1,h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+}
+
+/*----------)(------- Site Title -------)(----------*/
+
+
+
+/*------------)(----------- Main Content ---------)(---------*/
 
 
 /*  Viewport less than or equal to 750px   */
