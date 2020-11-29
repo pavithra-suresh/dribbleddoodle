@@ -96,7 +96,7 @@ span{
 }
 
 .container{
-    margin: 0.5vw;
+    margin: 0 5vw;
 }
 
 
@@ -301,6 +301,27 @@ section .container .owl-nav{
 
 
 /*------------)(----------- Blog Carousel ---------)(---------*/
+
+
+
+
+/*------------------------- Site Content --------------------------------*/
+
+
+
+main .site-content{
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content{
+    width: 100%;
+}
+
+/*-----------------)(---------------- Site Content ---------------)(-------------------*/
+
+
 
 
 /*------------)(----------- Main Content ---------)(---------*/
