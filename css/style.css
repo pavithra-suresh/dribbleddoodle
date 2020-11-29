@@ -401,6 +401,88 @@ main .post-content .post-title a{
 
 
 
+/*------------------------------- Site Bar -------------------------------*/
+
+.site-content > .sidebar .category-list{
+    font-family: var(--Livvic);
+}
+
+.site-content > .sidebar .category-list .list-items{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{
+    color: var(--black);
+}
+
+
+.site-content .sidebar .popular-post .post-content{
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1rem;
+}
+
+
+.site-content .sidebar .comments{
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .comments .form-element{
+    padding: .5rem 2rem;
+}
+
+.site-content .sidebar .comments .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-family: var(--Lexend);
+    font-size: 1rem;
+}
+
+.site-content .sidebar .comments .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--sky);
+}
+
+.site-content .sidebar .popular-tags{
+    padding: 5rem 0;;
+}
+
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+}
+
+
+
+/*-----------------)(---------------- Site Bar ---------------)(-------------------*/
+
+
 
 /*------------)(----------- Main Content ---------)(---------*/
 
