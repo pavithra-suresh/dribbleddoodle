@@ -392,6 +392,11 @@ main .post-content .post-title a{
     color: var(--white);
 }
 
+
+#more1, #more2, #more3 {display: none;}
+
+
+
 /*-----------------)(---------------- Site Content ---------------)(-------------------*/
 
 
