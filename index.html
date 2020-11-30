@@ -23,9 +23,12 @@
     <!----------------------- Custom Style ----------------------------------->
     <link rel="stylesheet" href="./css/style.css">
 
+
 </head>
 <body>
-    
+
+
+
     <!--------------------------------------------------- Navigation-------------------------------->
 
     <nav class="nav">
@@ -45,16 +48,16 @@
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Category</a>
+                        <a href="#category">Category</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Pages</a>
+                        <a href="#posts">Posts</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -75,12 +78,12 @@
 
         <!------------------------------------- Site Title ------------------------------------------->
 
-       <section class="site-title">
+       <section class="site-title" id="home">
            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
                <h3>Pavithra Suresh Blog</h3> 
                <br>
                <h1><span style="background-color: #fbffb9;">Magic of Words! &nbsp Flown with Emotions!</span></h1>
-               <button class="btn">Explore</button>
+               <button class="btn" id="explore">Explore</button>
            </div>
        </section>
 
@@ -92,7 +95,7 @@
         <!------------------------------- Blog Carousel-------------------------------------------->
 
         <section>
-            <div class="blog">
+            <div class="blog" id="explore">
                 <div class="container">
                     <div class="owl-carousel owl-theme blog-post">
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
@@ -290,16 +293,14 @@ those past with your present, still makes me
                             <button class="read btn post-btn" onclick="myFunction3()" id="myBtn3">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
-                    <div class="pagination flex-row">
-                        <a href="#"><i class="fas fa-chevron-left"></i></a>
-                        <a href="#" class="pages">1</a>
-                        <a href="#" class="pages">2</a>
-                        <a href="#" class="pages">3</a>
-                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    <div class="pagination flex-row" id="here">
+                        <a href="#here"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#here" class="pages">1</a>
+                        <a href="#here"><i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <aside class="sidebar">
-                    <div class="category">
+                    <div class="category" id="category">
                         <h2>Category</h2>
                         <ul class="category-list">
                             <li class="list-items" data-aos="fade-left" data-aos-delay="100">
@@ -348,7 +349,7 @@ those past with your present, still makes me
                             </li>
                         </ul>
                     </div>
-                    <div class="popular-post">
+                    <div class="popular-post" id="posts">
                         <h2>Popular Post</h2>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                             <div class="post-image">
@@ -425,7 +426,7 @@ those past with your present, still makes me
                         <h2>Comment Box</h2>
                         <div class="form-element">
                             <input type="text" class="input-element" placeholder="make a remark">
-                            <button class="btn form-btn">Submit</button>
+                            <button type="submit" class="btn form-btn" onclick="showGratitude2()" id="gratitude2">Submit</button>
                         </div>
                     </div> 
                     <div class="popular-tags">
@@ -463,10 +464,13 @@ those past with your present, still makes me
                 <p>(Pavithra Suresh) <br>Quotes | YourQuote <br> At dribbled.doodle this doodler doodles not merely words, but with emotions!</p>
             </div>
             <div class="comments" data-aos="fade-right" data-aos-delay="200">
-                 <h2>Comment</h2>
+                 <h2>Comment Box</h2>
                  <p>Drop few words here</p>
                  <div class="form-element">
-                     <input type="text" placeholder="Remarks"><span><i class="fas fa-chevron-right"></i></span>
+                    <form method="GET">
+                     <input type="text" placeholder="Remarks">
+                     <button type="submit" onclick="showGratitude1()" id="gratitude1"><i class="fas fa-chevron-right"></i></button>
+                     </form>
                  </div>
             </div>
             <div class="instagram" data-aos="fade-left" data-aos-delay="200">
@@ -482,7 +486,7 @@ those past with your present, still makes me
                     <img src="./assets/instagram/instapost6.jpg" alt="insta6">
                 </div>
             </div>
-            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <div class="follow" data-aos="fade-left" data-aos-delay="200" id="contact">
                 <h2>Follow me</h2>
                 <p>Let us be Social</p>
                 <div>
@@ -586,6 +590,17 @@ those past with your present, still makes me
         moreText3.style.display = "inline";
       }
     }
+
+
+    function showGratitude1(){
+        document.getElementById("gratitude1").innerHTML = "Thank You!";
+    }
+
+    function showGratitude2(){
+        document.getElementById("gratitude2").innerHTML = "Thank You!";
+    }
+
+
 </script>
 
 <!-----------)(------- Read More Javascript --------)(------------------>

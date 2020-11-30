@@ -524,12 +524,12 @@ footer.footer .comments .form-element input{
     color: white;
     font-family: var(--JosefinSans);
     font-size: 1rem;
-    width: 74%;
+    width: 71%;
 
 }
 
 
-footer.footer .comments .form-element span{
+footer.footer .comments .form-element button{
     background: var(--sky);
     padding: .5rem .7rem;
     cursor: pointer;
