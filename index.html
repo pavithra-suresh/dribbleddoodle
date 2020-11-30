@@ -303,48 +303,48 @@ those past with your present, still makes me
                     <div class="category" id="category">
                         <h2>Category</h2>
                         <ul class="category-list">
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
-                                <a href="#">Friendship</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100" id="c1">
+                                <a href="#c1">Friendship</a>
                                 <span>(3)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
-                                <a href="#">Mother</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200" id="#c2">
+                                <a href="#c2">Mother</a>
                                 <span>(2)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
-                                <a href="#">Motivation</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300" id="c3">
+                                <a href="#c3">Motivation</a>
                                 <span>(5)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
-                                <a href="#">Food</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400" id="#c4">
+                                <a href="#c4">Food</a>
                                 <span>(3)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="500">
-                                <a href="#">Nature</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="500" id="c5">
+                                <a href="#c5">Nature</a>
                                 <span>(5)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="600">
-                                <a href="#">Travel</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="600" id="c6">
+                                <a href="#c6">Travel</a>
                                 <span>(3)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="700">
-                                <a href="#">Love</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="700" id="c7">
+                                <a href="#c7">Love</a>
                                 <span>(10)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="800">
-                                <a href="#">Pain</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="800" id="c8">
+                                <a href="#c8">Pain</a>
                                 <span>(10)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="900">
-                                <a href="#">Life</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="900" id="c9">
+                                <a href="#c9">Life</a>
                                 <span>(10)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="1000">
-                                <a href="#">Midnight Tales</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="1000" id="c10">
+                                <a href="#c10">Midnight Tales</a>
                                 <span>(10)</span>
                             </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="1100">
-                                <a href="#">Humour</a>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="1100" id="c11">
+                                <a href="#c11">Humour</a>
                                 <span>(4)</span>
                             </li>
                         </ul>
@@ -425,8 +425,10 @@ those past with your present, still makes me
                     <div class="comments" data-aos="fade-up" data-aos-delay="300">
                         <h2>Comment Box</h2>
                         <div class="form-element">
-                            <input type="text" class="input-element" placeholder="make a remark">
+                            <form id="myform2" onsubmit="return false">
+                            <input type="text" class="input-element" id="defaults2" placeholder="make a remark">
                             <button type="submit" class="btn form-btn" onclick="showGratitude2()" id="gratitude2">Submit</button>
+                            </form>
                         </div>
                     </div> 
                     <div class="popular-tags">
@@ -467,8 +469,8 @@ those past with your present, still makes me
                  <h2>Comment Box</h2>
                  <p>Drop few words here</p>
                  <div class="form-element">
-                    <form method="GET">
-                     <input type="text" placeholder="Remarks">
+                     <form id="myform1" onsubmit="return false">
+                     <input type="text" placeholder="Remarks" id="defaults1">
                      <button type="submit" onclick="showGratitude1()" id="gratitude1"><i class="fas fa-chevron-right"></i></button>
                      </form>
                  </div>
@@ -593,11 +595,14 @@ those past with your present, still makes me
 
 
     function showGratitude1(){
-        document.getElementById("gratitude1").innerHTML = "Thank You!";
+        document.getElementById("gratitude1").innerHTML = ":)";
+        document.getElementById("myform1").reset();
     }
 
     function showGratitude2(){
         document.getElementById("gratitude2").innerHTML = "Thank You!";
+        document.getElementById("myform2").reset();
+        
     }
 
 
