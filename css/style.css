@@ -319,8 +319,7 @@ section .container .owl-nav{
 
 
 
-main .site-content{   
-    margin-top: 20vh;
+main .site-content{ 
     display: grid;
     grid-template-columns: 70% 30%;
 }
